@@ -1,0 +1,105 @@
+/* In this case, the small viewport is the default css - no queries */
+h2 {color:yellow; margin:0;border-bottom: 1px dashed#999}
+section {margin: 10px auto;width: 400px; border:1px solid #333; background-color: #eee; padding: 7px;}
+
+
+/*'medium' media query section */
+@media (min-width: 32.5em) {}
+
+
+/* 'large' media query section */
+@media (min-width: 64em) {}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+/* phone or basleine views ********************/
+main {
+    max-width: 767px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1 fr;
+    font-size:  0.8rem;
+}
+
+
+main section {
+    margin: 0.5 rem;
+    border: 1px solid #333;
+    padding: 0 1rem;
+    background-color: #ffffff;
+}
+
+
+main section h2 {
+    color: #333;
+}    
+
+
+section:nth-child(2) {
+    display: none;
+    margin: 0.5rem;
+}
+
+
+.colimage {
+    box-shadow: 0 0 30px #333;
+    }
+
+
+
+
+    /* Table Views ****************************/
+    @media only screen and (min-width: 37.5em) {
+
+
+        main {
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+        section:nth-child(2) {
+            display: block;
+        }
+
+
+        section:nth-child(3) {
+            grid-column: span 2;
+        }
+
+
+        main section picture {
+            display: block;
+        }
+        main section picture img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #333;
+            }
+        }
+
+
+   
+        /* Desktop Views **********************/
+        @media only screen and (min-width: 60em) {
+
+
+            main {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            section:nth-child(3) {
+                grid-column: span 1;
+            }
+        }
