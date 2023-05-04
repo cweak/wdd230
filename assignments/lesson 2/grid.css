@@ -20,9 +20,9 @@ body {
 /* phone or basleine views ********************/
 main {
     max-width: 767px;
-    margin: 0 auto;
+    margin: 2px auto;
     display: grid;
-    grid-template-columns: 1 fr;
+    grid-template-columns: 1fr 1fr 1fr;
     font-size:  0.8rem;
 }
 
