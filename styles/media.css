@@ -1,0 +1,16 @@
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .body {
+      width: 80%;
+      padding: 0;
+    }
+    .main {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .body {
+      width: 100%;
+    }
+  }
