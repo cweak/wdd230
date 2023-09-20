@@ -25,18 +25,25 @@ h3 {
     text-align: center;
    }
 
+   .vertical-menu2 {
+    width: 100%; /* Set a width if you like */
+    text-align: center;
+  }
+
+  .vertical-menu2 a {
+    background-color: none;
+    color: rgb(130, 130, 130); /* Grey color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+
    ul {
     border: solid #444444;
     margin: 0;
     padding: 5%;
+    text-align: left;
        }
-
-   ul.no-bullets {
-    list-style-type: none;
-    margin: 5%;
-    padding: 5%;
-    text-align: center;
-  }
 
 .vertical-menu {
     width: 100%; /* Set a width if you like */
@@ -63,6 +70,8 @@ h3 {
     a:link {
         color:rgb(18, 175, 175);
   }
+
+  
 
 footer {
     background-color: #ffe599;

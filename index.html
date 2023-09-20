@@ -3,64 +3,67 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chani Weakland - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Chani Weakland - WDD 230 - course assignment portal">
+    <title>Chani Weakland -  WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Chani Weakland - WDD 230 - Course Assignment Portal">
     <meta name="author" content="Chani Weakland">
-
+    
     <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/larger.css" rel="stylesheet">
-  </head>
+    <link href="styles/larger.css" rel="stylesheet" />
 
+  </head>
+  
   <body>
     <header>
-      <img src="images/chani2023.jpg" alt="chani2023" width="100" height="auto">
+      <img src="images/Chani2023.jpg" alt="Chani2023" width="100" height="auto">
       <h1>Chani Weakland</h1>
     </header>
-
-    <nav>
-     <li>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="chamber/siteplan.html/">Site Plan</a></li>
-        <li><a href="chamber/">Chamber</a></li>
-        <li><a href="https://www.byui.edu/">BYU-Idaho</a><li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/89?lang=eng">Scripture</a></li>
-      </ul>
+<nav>
+    <main>
+      <div class="vertical-menu">
+        <a href="/home/" class="active">Home</a>
+        <a href="chamber/siteplan.html/">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu/">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/89?lang=eng"
+          >Scripture</a
+        >
+      </div>
     </nav>
-
     <main>
       <h2>WDD 230: Web Frontend Development</h2>
-      <hr>
-        
-      <nav>
+      <section><hr>
+    
         <ul>
           <h3 class="card">Learning Activities</h3>
-          <li>01: <a href="#">Home</a></li>
-          <li>02: <a href="#">Design Principles</a></li>
-          <li>03: <a href="#"></a></li>
-          <li>04: <a href="#"></a></li>
-          <li>05: <a href="#"></a></li>
-          <li>06: <a href="#"></a></li>
-          <li>07: <a href="#"></a></li>
-          <li>08: <a href="#"></a></li>
-          <li>09: <a href="#"></a></li>
-          <li>10: <a href="#"></a></li>
-          <li>11: <a href="#"></a></li>
+          <li>W1<a href="home">Home Page</a></li>
+          <li>W2<a href="design-principles">Design Principles</a></li>
+          <li>W3<a href="#"></a></li>
+          <li>W4<a href="#"></a></li>
+          <li>W5<a href="#"></a></li>
+          <li>W6<a href="#"></a></li>
+          <li>W7<a href="#"></a></li>
+          <li>W8<a href="#"></a></li>
+          <li>W9<a href="#"></a></li>
+          <li>W10<a href="#"></a></li>
+          
         </ul>
-      </nav>
-
-      <nav>
-          <ul class="no-bullets">
+<div class="vertical-menu2">
+        <ul>
           <h3 class="card">Information</h3>
-          <li>Mesa, Arizona</li>
-          <li>Sunny 99F</li>
-          <li>Page Visits : </li>
+          <a href="#">Mesa, Arizona</a></li>
+          <a href="#">99 F - Sunshine</a>
+          <a href="#">Page Visits: 15</a>
+        
         </ul>
+      </div>
       </nav>
+    </section>
     </main>
+    
     <footer>
-      <h4>&copy; 2023 <br><br>
-        Chani Weakland</h4>
-     <h5> Mesa, Arizona<img src="images/azflag.jpg" alt="Az Flag" width="50"></h5>
+      &copy; 2023 <span id="theYear"></span> &bull; <span id="lu"></span> <br>Chani Weakland
+       <br>
+      <img src="images/azflag.jpg" alt="Az Flag" style="width: 50px">
       <p id="demo"></p>
     </footer>
   </body>
@@ -70,3 +73,5 @@
   let text = document.lastModified;
   document.getElementById("demo").innerHTML = text;
 </script>
+
+
