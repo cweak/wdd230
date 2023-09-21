@@ -1,5 +1,6 @@
 * {font-family: 'Raleway', sans-serif;}
  
+
 header{
     background-color: #ffe599;
     margin: 8px;
@@ -7,15 +8,21 @@ header{
     display: flex;
     padding: 2%;
     gap: 2px;
+    max-width: 800px;
+    
    }
 
 main {
     text-align: center;
+    max-width: 800px;
+    
 }
 
 nav {
     text-align: left;
     padding: .5rem ;
+    margin: 0 auto;
+    max-width: 800px; 
 }
 
 h3 {
@@ -47,7 +54,7 @@ h3 {
 .vertical-menu {
     width: 100%; /* Set a width if you like */
     text-align: center;
-  }
+      }
   
   .vertical-menu a {
     background-color: rgb(174, 238, 238);
@@ -70,14 +77,13 @@ h3 {
         color:rgb(18, 175, 175);
   }
 
-  
-
 footer {
     background-color: #ffe599;
     margin: 8px;
     text-align: center;
     padding: 2%; 
     display: flexbox;
+    max-width: 800px;
 }
 
 img {
