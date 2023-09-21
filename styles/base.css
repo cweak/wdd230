@@ -4,10 +4,9 @@ header{
     background-color: #ffe599;
     margin: 8px;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 400px;
+    display: flex;
     padding: 2%;
-
+    gap: 2px;
    }
 
 main {
