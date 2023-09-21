@@ -1,5 +1,12 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
+    margin: 1rem;
 }
 
 header, main, footer {
@@ -9,21 +16,31 @@ header, main, footer {
 
 marquee {
 	padding: 1rem;
-	background-color: #eee;
+	background-color: rgb(174, 238, 238);
 }
 
 h1 {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
 }
 
 main {
 	display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 1.5rem;
+}
+section {
+    padding: 1rem;
 }
 
 h2 {
-	color: rgb(174, 238, 238);
+	color: rgb(0, 224, 224);
 	text-align: left;
+    grid-column: 1/3;
+}
+
+h3 {
+    margin-bottom:  .5rem;
 }
 
 article p {
@@ -31,8 +48,10 @@ article p {
 }
 
 .callout {
+    border: 1px solid rgba(0, 0, 0, 0.1);
 	color: #5f5f5f;
 	background-color: #ffe599;
+    grid-column: 1/3;
     padding: 5%;
 }
 
@@ -41,7 +60,12 @@ footer {
     margin: 8px;
     text-align: center;
     padding: 2%; 
-}
+    display: flexbox;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .5rem 0;
+    font-size: smaller;
+    }
 
 images {
     border: 1px solid #ddd;
