@@ -1,10 +1,8 @@
 body {
-	font-family: Roboto, helvetica, sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
-header,
-main,
-footer {
+header, main, footer {
 	max-width: 760px;
 	margin: 0 auto;
 }
@@ -20,11 +18,12 @@ h1 {
 
 main {
 	display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 h2 {
-	color: navy;
-	text-align: center;
+	color: rgb(174, 238, 238);
+	text-align: left;
 }
 
 article p {
@@ -34,11 +33,21 @@ article p {
 .callout {
 	color: #5f5f5f;
 	background-color: #ffe599;
+    padding: 5%;
 }
 
 footer {
-	margin-top: 1rem;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	font-size: smaller;
-	text-align: right;
+    background-color: #ffe599;
+    margin: 8px;
+    text-align: center;
+    padding: 2%; 
 }
+
+images {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    border-radius: 10%;
+    
+  }
