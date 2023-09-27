@@ -64,14 +64,14 @@
       &copy; 2023 <span id="theYear"></span> &bull; <span id="lu"></span> <br>Chani Weakland
        <br>
       <img src="images/azflag.jpg" alt="Az Flag" style="width: 50px">
-      <p id="demo"></p>
+    <p>lastModified:<p><p id="demo"></p>
     </footer>
   </body>
 </html>
 
 <script>
-  let text = document.lastModified;
-  document.getElementById("demo").innerHTML = text;
-</script>
+  const date = new Date(document.lastModified);
+  document.getElementById("demo").innerHTML = date;
+  </script>
 
 
