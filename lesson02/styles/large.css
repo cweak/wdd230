@@ -1,0 +1,29 @@
+@media only screen and (max-width:500px) and (max-width:1200px) {
+    header {
+        background-color: black;
+        color: white;
+    }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  main h2 {
+    grid-column: 1 / span 2;
+  }
+  
+      /* For tablets: */
+      .body {
+        width: 80%;
+        padding: 0;
+      }
+      .main {
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width:500px) {
+      /* For mobile phones: */
+      .menu, .main, .body {
+        width: 100%;
+      }
+    }
